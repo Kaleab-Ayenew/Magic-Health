@@ -2,6 +2,7 @@ import React from "react";
 import IntroSection from "./IntroSection";
 import ContentSection from "../public/ContentSection";
 import SwiperComp from "../public/SwiperComp";
+import Footer from "../public/Footer";
 
 import "./home.css"
 export default function Home(){
@@ -122,7 +123,7 @@ export default function Home(){
                 <SwiperComp/>
             </ContentSection>
             
-            
+            <Footer/>
         </div>
     )
 }
