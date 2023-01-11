@@ -1,0 +1,108 @@
+.content-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 70px;
+}
+
+.content-section__gray{
+    background-color: #F1F0F0;
+}
+
+.content-section h1{
+    color: #01539d;
+    font-weight: 700;
+    font-size: 2.5em;
+    margin: 20px 0;
+}
+
+.content-section h2{
+    color: #283e59;
+    font-size: 1.45em;
+    margin: 7px 0;
+}
+
+.content-section p{
+    font-size: 0.85em;
+    color: #6f6f6f;
+    max-width: 80ch;
+    text-align: center;
+    margin: 10px 0;
+    line-height: 1.7em;
+    display: block;
+}
+
+.content-section p span{
+    margin: 5px 0;
+    display: inline-block;
+}
+
+.content-section p li{
+    list-style-type: none;
+    margin: 10px 0;
+}
+
+.content-section iframe{
+    min-height: 500px;
+    width: 100%;
+    margin: 40px 0;
+}
+.content-section .section__img-holder{
+    margin-top: 40px;
+}
+
+.content-section .section__img-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+}
+
+.content-section .section__img-row > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 300px;
+}
+
+.content-section .section__img-row > div > *{
+    margin: 15px 0;
+}
+
+.content-section .section__img-text-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 35px 0;
+}
+
+.content-section .section__img-text-row > div.text{
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    position: relative;
+    height: 100%;
+}
+
+.content-section .section__img-text-row > div.text > p{
+    text-align: left;
+}
+
+.content-section .section__img-text-row > div.text:nth-child(1) > img{
+    height: 250px;
+    align-self:baseline;
+}
+
+.content-section .section__img-text-row > div.text:nth-child(2) > img{
+    height: 250px;
+    align-self: flex-end;
+}
+
+.content-section .section__img-text-row > div.small > img{
+    height: 450px;
+}
+
+.content-section .section__img-text-row > div.large > img{
+    height: 500px;
+}

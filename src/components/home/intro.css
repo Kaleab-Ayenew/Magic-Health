@@ -14,6 +14,7 @@ section.intro-section{
 section.intro-section h1{
     font-size: 3.5em;
     font-weight: 700;
+    white-space: nowrap;
 }
 
 section.intro-section p{
@@ -33,6 +34,7 @@ section.intro-section > div > a{
     margin: 0 30px;
     border-radius: 7px;
     font-size: 0.9em;
+    white-space: nowrap;
 }
 
 section.intro-section > div > span{
@@ -42,6 +44,7 @@ section.intro-section > div > span{
     margin: 0 30px;
     font-size: 1.1em;
     font-weight: bold;
+    white-space: nowrap;
 }
 
 section.intro-section > div > span > svg{
