@@ -1,6 +1,5 @@
 import React from "react";
 import ContentSection from "../public/ContentSection";
-import Footer from "../public/Footer";
 
 
 export default function About(){
@@ -128,7 +127,6 @@ export default function About(){
                     </div>
                 </div>
             </ContentSection>
-            <Footer/>
         </div>
     )
 }

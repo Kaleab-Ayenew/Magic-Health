@@ -44,3 +44,7 @@ header .button-group > a:hover{
     background-color: white;
     color: black;
 }
+
+@media only screen and (max-width:1008px){
+    
+}

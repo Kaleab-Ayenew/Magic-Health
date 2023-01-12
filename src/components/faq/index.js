@@ -1,6 +1,5 @@
 import React from "react"
 import ContentSection from "../public/ContentSection"
-import Footer from "../public/Footer"
 import "./faq.css"
 
 const AccordionItem = (props)=>{
@@ -54,7 +53,6 @@ export default function Faq(){
                 </div>
 
             </ContentSection>
-            <Footer/>
         </div>
     )
 }

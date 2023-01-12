@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../public/Footer";
 import ContentSection from "../public/ContentSection";
 import "./contact.css"
 export default function Contact(){
@@ -62,7 +61,7 @@ export default function Contact(){
                     </div>
                 </div>
             </ContentSection>
-            <Footer/>
+
         </div>
     )
 }
