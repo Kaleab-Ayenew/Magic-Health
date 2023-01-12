@@ -1,0 +1,19 @@
+.accordion__container{
+    width: 100%;
+    padding: 50px 0;
+}
+
+.accordion-button{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.accordion-button:focus{
+    border: none;
+}
+
+.accordion-button:not(.collapsed){
+    background: none;
+    color: black;
+}

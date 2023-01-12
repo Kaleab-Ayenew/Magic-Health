@@ -1,0 +1,22 @@
+.spinner-section{
+    min-height: 100vh;
+    background-color: #d3d3d3;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner-section i{
+    animation: rot 2s linear infinite;
+    font-size: 2.5em;
+}
+
+@keyframes rot{
+    0%{
+        rotate: 0;
+    }
+    100%{
+        rotate: 1turn;
+    }
+}

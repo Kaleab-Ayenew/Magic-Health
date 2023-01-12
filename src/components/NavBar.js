@@ -3,6 +3,9 @@ import { Link, NavLink } from "react-router-dom";
 import './navbar.css'
 
 export default function NavBar(){
+    const activeStyle = {
+        color: "orange",
+    }
     return(
         <header>
             
@@ -11,11 +14,11 @@ export default function NavBar(){
             </span>
 
             <nav className="main-nav">
-                <NavLink to="/">Home</NavLink>
-                <NavLink to="/about">About</NavLink>
-                <NavLink to="/blog">Blog</NavLink>
-                <NavLink to="/faq">FAQ</NavLink>
-                <NavLink to="/contact">Contact</NavLink>
+                <NavLink style={({isActive})=>isActive ? activeStyle : undefined} to="/">Home</NavLink>
+                <NavLink style={({isActive})=>isActive ? activeStyle : undefined} to="/about">About</NavLink>
+                <NavLink style={({isActive})=>isActive ? activeStyle : undefined} to="/blog">Blog</NavLink>
+                <NavLink style={({isActive})=>isActive ? activeStyle : undefined} to="/faq">FAQ</NavLink>
+                <NavLink style={({isActive})=>isActive ? activeStyle : undefined} to="/contact">Contact</NavLink>
             </nav>
 
             <span className="button-group">
