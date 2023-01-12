@@ -4,6 +4,7 @@ import ContentSection from "../public/ContentSection";
 
 export default function Blog(){
     React.useEffect(()=>{
+        document.title = "Blog - Better Health"
         window.scrollTo(0, 0)
     },[])
     return(

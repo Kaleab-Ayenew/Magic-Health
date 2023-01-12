@@ -6,6 +6,7 @@ import "./faq.css"
 const AccordionItem = (props)=>{
 
     React.useEffect(()=>{
+        document.title = "FAQ - Beaker Health"
         window.scrollTo(0, 0)
     },[])
 

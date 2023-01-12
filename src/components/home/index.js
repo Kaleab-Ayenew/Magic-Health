@@ -7,6 +7,7 @@ import Footer from "../public/Footer";
 import "./home.css"
 export default function Home(){
     React.useEffect(()=>{
+        document.title = "Home - Beaker Health"
         window.scrollTo(0, 0)
     },[])
     return(

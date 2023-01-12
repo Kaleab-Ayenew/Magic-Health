@@ -5,6 +5,7 @@ import Footer from "../public/Footer";
 
 export default function About(){
     React.useEffect(()=>{
+        document.title = "About - Better Health"
         window.scrollTo(0, 0)
     },[])
     return(
