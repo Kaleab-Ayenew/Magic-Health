@@ -6,6 +6,9 @@ import Footer from "../public/Footer";
 
 import "./home.css"
 export default function Home(){
+    React.useEffect(()=>{
+        window.scrollTo(0, 0)
+    },[])
     return(
         <div className="home-container">
             <IntroSection />

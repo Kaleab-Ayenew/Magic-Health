@@ -3,6 +3,9 @@ import Footer from "../public/Footer";
 import ContentSection from "../public/ContentSection";
 
 export default function Blog(){
+    React.useEffect(()=>{
+        window.scrollTo(0, 0)
+    },[])
     return(
         <div class="blog__container">
             <ContentSection style={{minHeight:"90vh", display:"flex", justifyContent:"center", alignItems:"center"}}>

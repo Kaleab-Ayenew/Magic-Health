@@ -4,6 +4,10 @@ import ContentSection from "../public/ContentSection";
 import "./contact.css"
 export default function Contact(){
 
+    React.useEffect(()=>{
+        window.scrollTo(0, 0)
+    },[])
+
     const [formValue, setFormValue] = React.useState({
         name:"",
         email:"",
@@ -22,6 +26,7 @@ export default function Contact(){
             msg:""
         })
     }
+    
     return(
         <div className="contact__container">
             <ContentSection style={{padding:"70px 100px",}}>

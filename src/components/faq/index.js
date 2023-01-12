@@ -5,6 +5,10 @@ import "./faq.css"
 
 const AccordionItem = (props)=>{
 
+    React.useEffect(()=>{
+        window.scrollTo(0, 0)
+    },[])
+
     return(
             <div class="accordion-item">
                 <h2 class="accordion-header" id={`flush-heading${props.index}`}>

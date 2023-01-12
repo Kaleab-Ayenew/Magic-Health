@@ -4,6 +4,9 @@ import Footer from "../public/Footer";
 
 
 export default function About(){
+    React.useEffect(()=>{
+        window.scrollTo(0, 0)
+    },[])
     return(
         <div className="about-container">
             <ContentSection>
