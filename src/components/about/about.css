@@ -1,0 +1,30 @@
+.about__quote-img {
+  width: 40px;
+  max-height: 40px;
+  position: relative;
+  top: 50px;
+  right: 20px;
+  z-index: -1;
+}
+
+.about__connect-btn {
+  background-color: #01539d;
+  color: white;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+.content-section .section__img-text-row > div.small.about__img-margin {
+  margin: 40px 0;
+}
+
+.about__center-header {
+  text-align: center;
+}
+
+@media screen and (max-width: 1020px) {
+  .about__quote-img {
+    right: 90px;
+  }
+}

@@ -1,50 +1,128 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
-header{
-    display: flex;
-    background: rgb(30,53,71);
-    background: linear-gradient(90deg, rgba(30,53,71,1) 0%, rgba(0,96,184,1) 100%);
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 80px;
-    height: 80px;
-    position: sticky;
+header {
+  display: flex;
+  background: rgb(30, 53, 71);
+  background: linear-gradient(
+    90deg,
+    rgba(30, 53, 71, 1) 0%,
+    rgba(0, 96, 184, 1) 100%
+  );
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+  height: 80px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+header.sticky {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  animation: header-drop 0.5s ease;
+}
+
+@keyframes header-drop {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+header > span.logo > img {
+  height: 60px;
+}
+
+header .main-nav {
+  display: flex;
+}
+
+header .main-nav > a {
+  margin: 0 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+header .button-group > a {
+  padding: 7px 30px;
+  font-size: 0.8em;
+  margin: 0 10px;
+  color: white;
+  border: 2px solid white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  white-space: nowrap;
+}
+
+header .button-group > a:hover {
+  background-color: white;
+  color: black;
+}
+header .header__menu-button-holder {
+  display: none;
+  z-index: 10;
+}
+
+header .header__menu-button-holder i {
+  color: white;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 950px) {
+  header {
+    padding: 0 25px;
+  }
+  header .main-nav {
+    visibility: hidden;
+    position: fixed;
     top: 0;
-    left: 0;
-    z-index: 5;
-}
-
-header > span.logo > img{
-    height: 60px;
-}
-
-header .main-nav{
-    display: flex;
-}
-
-header .main-nav > a{
-    margin: 0 20px;
-    color: #fff;
-    text-decoration: none;
-}
-
-header .button-group > a{
-    padding: 7px 30px;
-    font-size: 0.8em;
-    margin: 0 10px;
-    color: white;
-    border: 2px solid white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 10px;
-    white-space: nowrap;
-}
-
-header .button-group > a:hover{
-    background-color: white;
+    right: 0;
+    flex-direction: column;
+    width: 50%;
+    background-color: #fff;
+    height: 100vh;
+    overflow: hidden;
+    padding: 0;
+    padding-top: 30px;
+    border-left: 1px solid lightgray;
+    box-shadow: -2px 0 10px rgba(185, 185, 185, 0.3);
+    opacity: 0;
+    transform: translateX(30px);
+    transition: all 0.5s ease;
+  }
+  header .main-nav.expand {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+  }
+  header .main-nav > a {
     color: black;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 0.5px solid lightgray;
+  }
+
+  header .button-group {
+    display: flex;
+    display: none;
+  }
+  header .header__menu-button-holder {
+    display: block;
+  }
 }
 
-@media only screen and (max-width:1008px){
-    
+@media only screen and (max-width: 500px) {
+  header .main-nav {
+    width: 70%;
+    align-items: unset;
+  }
 }
