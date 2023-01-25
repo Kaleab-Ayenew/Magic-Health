@@ -1,0 +1,14 @@
+:root {
+  --public-background: rgb(0, 86, 255);
+  --public-gradient: linear-gradient(
+    90deg,
+    rgba(0, 86, 255, 1) 0%,
+    rgba(122, 223, 255, 1) 100%
+  );
+}
+
+.lottie-container {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}

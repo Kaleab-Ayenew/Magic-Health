@@ -2,12 +2,8 @@
 
 header {
   display: flex;
-  background: rgb(30, 53, 71);
-  background: linear-gradient(
-    90deg,
-    rgba(30, 53, 71, 1) 0%,
-    rgba(0, 96, 184, 1) 100%
-  );
+  background: var(--public-background);
+  background: var(--public-gradient);
   justify-content: space-between;
   align-items: center;
   padding: 0 80px;
@@ -23,6 +19,9 @@ header.sticky {
   width: 100%;
   top: 0;
   left: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid lightgray;
+  backdrop-filter: blur(5px);
   animation: header-drop 0.5s ease;
 }
 
@@ -37,6 +36,8 @@ header.sticky {
 
 header > span.logo > img {
   height: 60px;
+  width: 80px;
+  object-fit: cover;
 }
 
 header .main-nav {
@@ -71,7 +72,7 @@ header .header__menu-button-holder {
 }
 
 header .header__menu-button-holder i {
-  color: white;
+  color: orange;
   font-size: 1.5rem;
 }
 
@@ -117,6 +118,17 @@ header .header__menu-button-holder i {
   }
   header .header__menu-button-holder {
     display: block;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  header {
+    background: rgb(0, 86, 255);
+    /* background: linear-gradient(
+      0deg,
+      rgba(0, 86, 255, 1) 0%,
+      rgba(122, 223, 255, 1) 100%
+    ); */
   }
 }
 

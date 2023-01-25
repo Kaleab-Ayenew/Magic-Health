@@ -3,6 +3,7 @@ import ContentSection from "../public/ContentSection";
 import "./contact.css";
 export default function Contact() {
   React.useEffect(() => {
+    document.title = "Contact - Magic Health";
     window.scrollTo(0, 0);
   }, []);
 

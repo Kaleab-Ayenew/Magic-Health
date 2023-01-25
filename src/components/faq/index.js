@@ -4,7 +4,7 @@ import "./faq.css";
 
 const AccordionItem = (props) => {
   React.useEffect(() => {
-    document.title = "FAQ - Beaker Health";
+    document.title = "FAQ - Magic Health";
     window.scrollTo(0, 0);
   }, []);
 

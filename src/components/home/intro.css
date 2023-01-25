@@ -4,12 +4,8 @@ section.intro-section {
   flex-direction: column;
   align-items: center;
   padding: 70px 0;
-  background: rgb(30, 53, 71);
-  background: linear-gradient(
-    90deg,
-    rgba(30, 53, 71, 1) 0%,
-    rgba(0, 96, 184, 1) 100%
-  );
+  background: var(--public-background);
+  background: var(--public-gradient);
   color: white;
 }
 
@@ -70,12 +66,23 @@ section.intro-section > div > span > svg {
 
 @media screen and (max-width: 650px) {
   section.intro-section h1 {
-    font-size: 1.9rem;
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0;
     white-space: unset;
     text-align: center;
     width: 100%;
   }
   section.intro-section p {
     font-size: 0.9rem;
+    max-width: 50ch;
+  }
+  section.intro-section {
+    background: rgb(0, 86, 255);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 86, 255, 1) 0%,
+      rgba(122, 223, 255, 1) 100%
+    );
   }
 }

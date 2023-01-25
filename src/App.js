@@ -11,6 +11,7 @@ import Contact from "./components/contact";
 import Spinner from "./components/public/Spinner";
 import ErrorElement from "./components/public/ErrorElement";
 
+import "./App.css";
 function App() {
   const router = createBrowserRouter([
     {

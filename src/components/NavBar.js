@@ -13,7 +13,7 @@ export default function NavBar() {
       "expand"
     )
       ? "black"
-      : "white";
+      : "orange";
   };
   window.onscroll = () => {
     if (window.scrollY > 170) {
@@ -26,7 +26,7 @@ export default function NavBar() {
   return (
     <header>
       <span className="logo">
-        <img src="https://beakerhealth.com/images/logo/beaker-health-full-logo.svg" />
+        <img src={require("../images/logo.png")} />
       </span>
 
       <nav className="main-nav">
@@ -63,8 +63,8 @@ export default function NavBar() {
       </nav>
 
       <span className="button-group">
-        <Link to="/login">Log In</Link>
-        <Link to="/login">Sign Up</Link>
+        <Link to="/#">Log In</Link>
+        <Link to="/#">Sign Up</Link>
       </span>
       <span onClick={menuToggler} className="header__menu-button-holder">
         <i className="fa-solid fa-bars"></i>

@@ -3,7 +3,7 @@ import ContentSection from "../public/ContentSection";
 import "./blog.css";
 export default function Blog() {
   React.useEffect(() => {
-    document.title = "Blog - Better Health";
+    document.title = "Blog - Magic Health";
     window.scrollTo(0, 0);
   }, []);
   return (
