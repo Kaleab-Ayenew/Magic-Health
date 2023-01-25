@@ -1,5 +1,6 @@
 import React from "react";
 import ContentSection from "../public/ContentSection";
+import { Player } from "@lottiefiles/react-lottie-player";
 import "./faq.css";
 
 const AccordionItem = (props) => {
@@ -37,28 +38,29 @@ const AccordionItem = (props) => {
 export default function Faq() {
   const faqData = [
     [
-      "How do I download a certificate of completion?",
-      `First, make sure you are logged in. Once logged in, be on the ‘Scholar’ side of the platform. If on the scholar side, click ‘Dashboard”. You wild the small paper icon on the right hand side of the middle menu. The icon only appears if you have gone through the presentation and done the evaluation. If you leave the presentation early, you will not receive a certificate.`,
+      "What services does Magic Health provide?",
+      `Magic Health provides personalized health and nutrition consulting services that help individuals achieve their fitness goals and maintain a healthy lifestyle. Our team of experts analyze your lifestyle and devise customized plans to guide you through the journey of improved health, physical fitness, dietary habits, and more. `,
     ],
     [
-      "What if I need to pause during my presentation?",
-      `You can find the pause button underneath your video. This allows you to pause and pick up the recording where you left off. `,
+      "Who are your consultants?",
+      `Our team consists of certified healthcare professionals with a collective experience in the field of nutrition, health sciences, exercise science, sports medicine, preventive care and wellness coaching. They possess specialized knowledge and expertise in helping individuals take control of their physical wellbeing.
+      `,
     ],
     [
-      `Where can I view my metrics?`,
-      `Metrics can be viewed under dashboard. You will find four tabs that show how many, and where they are located.`,
+      `How can I book an appointment?`,
+      `You can book an initial consultation with our health consultants online via our website or by phone at (123)-456-7890. We will arrange for all future followit sessions according to your preference - remote video conferencing or in-person meetings at our office locations - whichever is most suitable for you!`,
     ],
     [
-      `How can I download the video or other resources?`,
-      `Currently we have not enabled this activity. We do our best to protect people's intellectual property. If this is a wish from many of our users we will take this into consideration for future iterations of the platform. Please reach out to contact@beakerheatlth.com if you believe this to add value or have other suggestions on how to improve!`,
+      `Is there any particular diet I need to follow?`,
+      ` At Magic Health, we understand that every individual is different and hence every journey to improved wellness will be unique as well! Our qualified health specialists will create custom diet plans tailored specifically to your goals and lifestyle needs that provide optimal nutritional balance without compromising on taste & enjoyment factor. `,
     ],
     [
-      `What are the methods of payment?`,
-      `We take all major US credit cards. This includes the following: Visa, Mastercard, Discover, JCB, American Express`,
+      `What other services do you offer apart from Nutrition Plans? `,
+      `At Magic Health we offer a wide range of services designed to help you live a healthier life - Exercise Programs; Stress Management Strategies; Sleep Optimization; Interactive Healthcare Software; Mental Wellbeing Sessions; Lifestyle Coaching Services; Telemedicine Services and more! `,
     ],
     [
-      `What is happening with my payment?`,
-      `Our payment provider is Stripe. They do wonderful things, just like you. It will be billed to your card as Beaker Health, Inc. There might be a few things we like to refer to as ‘operator error’s so please check your routing and account numbers before reaching out to us. If a problem persists, please contact us directly. When reaching out to us, please put ‘Payment’ in the subject line. In the body of the message include whatever screenshots you can and the description of the problem.`,
+      `Are there any mobile applications available for Magic Health users?  `,
+      `Yes! We have developed mobile applications for both iOS and Android platforms which offer interactive healthcare solutions with intuitive step-by-step instructions to help you stay on top of your wellbeing journey from the comfort & convenience of your smartphone device!`,
     ],
   ];
 
@@ -71,12 +73,15 @@ export default function Faq() {
     <div className="faq-container">
       <ContentSection>
         <h1 id="faq-header">Frequently Asked Questions</h1>
-        <p id="faq-header-text">
-          We would not have gotten to where we are today without help from
-          others, so let us help you. The community page is a helpful resource
-          with others helping to answer questions based on their experience
-          within the community.
-        </p>
+        <Player
+          src="https://assets10.lottiefiles.com/packages/lf20_zptgbuvm.json"
+          className="player"
+          loop
+          autoplay
+          style={{
+            width: window.screen.width <= 650 ? "350px" : "450px",
+          }}
+        />
 
         <div className="accordion__container">
           <div class="accordion accordion-flush" id="faqAccordion">

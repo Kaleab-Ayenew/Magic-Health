@@ -1,5 +1,6 @@
 import React from "react";
 import ContentSection from "../public/ContentSection";
+import { Player } from "@lottiefiles/react-lottie-player";
 import "./contact.css";
 export default function Contact() {
   React.useEffect(() => {
@@ -31,12 +32,7 @@ export default function Contact() {
       <ContentSection class="contact-section">
         <div>
           <h1>Get in Touch!</h1>
-          <p>
-            Your voice matters. Let it be heard.
-            <br />
-            Reach out and let us know how we can help.
-          </p>
-          <img src="https://beakerhealth.com/images/contact/message-icon.svg" />
+          <p>Reach out for anything!</p>
         </div>
 
         <div className="section__img-text-row">
@@ -84,7 +80,15 @@ export default function Contact() {
           </div>
 
           <div className="small">
-            <img src="https://beakerhealth.com/images/contact/contact.svg" />
+            <Player
+              src="https://assets8.lottiefiles.com/packages/lf20_7wwm6az7.json"
+              className="player"
+              loop
+              autoplay
+              style={{
+                width: window.screen.width <= 650 ? "350px" : "450px",
+              }}
+            />
           </div>
         </div>
       </ContentSection>

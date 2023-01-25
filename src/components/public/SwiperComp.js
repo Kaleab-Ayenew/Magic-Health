@@ -31,7 +31,7 @@ export default () => {
 
             <div className="sw-content">
               <div className="image">
-                <img src="https://beakerhealth.com/images/home/testimonials/quinta-caylor.jpg" />
+                <img src={require("../../images/testimonials/4.jpg")} />
               </div>
               <div className="text">
                 "Magic Health has completely changed my wellbeing. With the help
@@ -59,7 +59,7 @@ export default () => {
 
             <div className="sw-content">
               <div className="image">
-                <img src="https://beakerhealth.com/images/home/testimonials/flowers-richard.jpg" />
+                <img src={require("../../images/testimonials/2.jpg")} />
               </div>
               <div className="text">
                 "Magic Health is the only health consultancy I trust when it
@@ -89,7 +89,7 @@ export default () => {
 
             <div className="sw-content">
               <div className="image">
-                <img src="https://beakerhealth.com/images/home/testimonials/matt-troup.jpg" />
+                <img src={require("../../images/testimonials/3.jpg")} />
               </div>
               <div className="text">
                 "I have been a client of Magic Health for nearly a year now and
@@ -117,7 +117,7 @@ export default () => {
 
             <div className="sw-content">
               <div className="image">
-                <img src="https://beakerhealth.com/images/home/testimonials/denise-tola-duke-university-school-of-nursing.png" />
+                <img src={require("../../images/testimonials/1.webp")} />
               </div>
               <div className="text">
                 "My experience with Magic Health has been top notch from start

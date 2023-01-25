@@ -3,7 +3,7 @@ import IntroSection from "./IntroSection";
 import ContentSection from "../public/ContentSection";
 import SwiperComp from "../public/SwiperComp";
 import { Player } from "@lottiefiles/react-lottie-player";
-
+import divSvg from "../../images/about/division.svg";
 import "./home.css";
 export default function Home() {
   React.useEffect(() => {
@@ -21,7 +21,7 @@ export default function Home() {
           tailored to meet your individual needs.
         </p>
         <div className="section__img-holder">
-          <img src="https://beakerhealth.com/images/home/we-can-help/division.svg" />
+          <img src={divSvg} />
         </div>
 
         <p>
@@ -33,7 +33,15 @@ export default function Home() {
 
         <div className="section__img-row">
           <div>
-            <img src="https://beakerhealth.com/images/home/we-can-help/time-savings.svg" />
+            <Player
+              src="https://assets5.lottiefiles.com/packages/lf20_8btahzqu.json"
+              className="player"
+              loop
+              autoplay
+              style={{
+                width: window.screen.width <= 650 ? "250px" : "250px",
+              }}
+            />
             <h2>Cheap</h2>
             <p>
               We are commited to improving your health, not stealing your money.
@@ -41,7 +49,15 @@ export default function Home() {
           </div>
 
           <div>
-            <img src="https://beakerhealth.com/images/home/we-can-help/one-stop.svg" />
+            <Player
+              src="https://assets3.lottiefiles.com/packages/lf20_l13zwx3i.json"
+              className="player"
+              loop
+              autoplay
+              style={{
+                width: window.screen.width <= 650 ? "250px" : "250px",
+              }}
+            />
             <h2>One-Stop</h2>
             <p>
               We provide consultancy services on all kinds of health issues.
@@ -49,7 +65,15 @@ export default function Home() {
           </div>
 
           <div>
-            <img src="https://beakerhealth.com/images/home/we-can-help/efficient.svg" />
+            <Player
+              src="https://assets1.lottiefiles.com/packages/lf20_se5yaivc.json"
+              className="player"
+              loop
+              autoplay
+              style={{
+                width: window.screen.width <= 650 ? "250px" : "250px",
+              }}
+            />
             <h2>Long Term</h2>
             <p>We provide long term consultation that can last for years.</p>
           </div>

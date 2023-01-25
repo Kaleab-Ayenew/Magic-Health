@@ -9,7 +9,7 @@ export default function Blog() {
   return (
     <div class="blog__container">
       <ContentSection class="blog-section">
-        <h2>Welcome to the Beaker Health Blog</h2>
+        <h2>Welcome to the Magic Health Blog</h2>
         <p>
           This would have been a nice blog, but we don't have any content yet!
         </p>

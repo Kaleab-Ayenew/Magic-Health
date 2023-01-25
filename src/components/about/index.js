@@ -1,5 +1,7 @@
 import React from "react";
 import ContentSection from "../public/ContentSection";
+import { Player } from "@lottiefiles/react-lottie-player";
+import listSvg from "../../images/about/list-item-icon.svg";
 import "./about.css";
 export default function About() {
   React.useEffect(() => {
@@ -11,7 +13,15 @@ export default function About() {
       <ContentSection>
         <div className="section__img-text-row">
           <div className="small">
-            <img src="https://beakerhealth.com/images/about/hero/hero-creative.svg" />
+            <Player
+              src="https://assets3.lottiefiles.com/packages/lf20_tutvdkg0.json"
+              className="player"
+              loop
+              autoplay
+              style={{
+                width: window.screen.width <= 650 ? "350px" : "450px",
+              }}
+            />
           </div>
 
           <div className="text">
@@ -19,21 +29,30 @@ export default function About() {
               className="about__quote-img"
               src="https://beakerhealth.com/images/about/hero/quote-mark.svg"
             />
-            <h1>Specialty Meets Simplicity</h1>
+            <h1>The Best Service Offered by the Best</h1>
             <p>
-              Welcome! Every journey begins with the right education, and we
-              want to help you maintain the foundation you have built. Whether
-              we are becoming your technology arm or just supporting — together,
-              we can raise the bar in healthcare.
+              At Magic Health, we believe that good health is an essential part
+              of living a full and happy life. That’s why our team is dedicated
+              to helping people like you reach their goals and improve their
+              quality of life through sound nutrition advice, mental well-being
+              strategies, physical fitness regimens, and more
             </p>
             <span>
               <img src="https://beakerhealth.com/images/about/hero/ceo-signature.svg" />
             </span>
             <div>
-              <img src="https://beakerhealth.com/_next/image?url=%2Fimages%2Fabout%2Fhero%2Fceo-avatar.png&w=128&q=75" />
+              <img
+                style={{
+                  borderRadius: "50%",
+                  width: "50px",
+                  height: "50px",
+                  objectFit: "cover",
+                }}
+                src={require("../../images/about/ceo.jpg")}
+              />
               <p>
-                <li>Jerrod Jeffries -</li>
-                <li>Founder & CEO of Beaker Health</li>
+                <li>Johnny Phillips -</li>
+                <li>Founder & CEO of Magic Health</li>
               </p>
             </div>
           </div>
@@ -41,76 +60,86 @@ export default function About() {
       </ContentSection>
 
       <ContentSection gray={true}>
-        <h1>About Beaker Health</h1>
+        <h1>About Magic Health</h1>
 
         <div class="section__img-text-row">
           <div class="text">
             <h2>About Us</h2>
             <p>
-              At Beaker Health we aim to give everyone a platform to share their
-              healthcare expertise. Talented people in every discipline,
-              specialty, and niche. We want to help ensure that the best content
-              is easily available. Those that help create the knowledge should
-              receive those benefits, which is why we built a suite of tools.
+              Welcome to Magic Health! We are a health consultancy committed to
+              helping you achieve better health and overall well-being. Our team
+              of health professionals have years of knowledge and experience in
+              the health sector and provide a variety of services tailored to
+              meet your individual needs.
               <br />
               <br />
-              Use our platform tools for better compliance, analytics,
-              widespread dissemination, and an additional revenue stream.
+              Whether you’re looking for nutritional advice, stress management
+              tips, physical activity programs, or something else, we are here
+              to help.
               <br />
               <br />
-              Let us handle your education needs in order to measure impact and
-              get your time back.
+              Take a look around our site to learn more about us and the
+              services we offer.
             </p>
             <button className="about__connect-btn">Let's Connect</button>
           </div>
 
           <div class="small about__img-margin">
-            <img src="https://beakerhealth.com/_next/image?url=%2Fimages%2Fabout%2Fwhat-is-beaker-health%2Fabout-us-creative.png&w=1080&q=100" />
+            <Player
+              src="https://assets3.lottiefiles.com/private_files/lf30_4FGi6N.json"
+              className="player"
+              loop
+              autoplay
+              style={{
+                width: window.screen.width <= 650 ? "350px" : "450px",
+              }}
+            />
           </div>
         </div>
       </ContentSection>
 
       <ContentSection>
-        <h1>Putting You First</h1>
+        <h1>Our Mission</h1>
 
         <div className="section__img-text-row">
           <div className="large">
-            <img src="https://beakerhealth.com/_next/image?url=%2Fimages%2Fabout%2Four-vision%2Four-vision-collage.png&w=1080&q=100" />
+            <Player
+              src="https://assets3.lottiefiles.com/packages/lf20_ot5gqdfc.json"
+              className="player"
+              loop
+              autoplay
+              style={{
+                width: window.screen.width <= 650 ? "350px" : "450px",
+              }}
+            />
           </div>
 
           <div className="text">
-            <h2>Our Vision</h2>
+            <h2>Unlocking Magic Health</h2>
             <p>
-              Out with outdated models that take your intellectual property. In
-              with the model that rewards the doers, creators, and the
-              visionaries.
+              We believe everyone deserves health and wellbeing that is magical.
+              At Magic Health, our aim is to empower individuals on their
+              journey towards this optimal wellbeing, by providing tailored
+              services for every unique set of needs.
               <br />
               <br />
               Think of us as the following:
               <li>
-                <img src="https://beakerhealth.com/images/about/our-vision/list-item-icon.svg" />
-                The space between that disputed facebook post and a lengthy
-                MOOC.
+                <img src={listSvg} />
+                Our experienced health practitioners use a holistic approach to
+                healthcare.
               </li>
               <li>
-                <img src="https://beakerhealth.com/images/about/our-vision/list-item-icon.svg" />
-                The side hustle healthcare workers deserve for all those years
-                of hard work.
+                <img src={listSvg} />
+                We combine both traditional and natural modalities such as
+                lifestyle counseling, complementary therapies, and
+                evidence-based nutrition plans.
               </li>
               <li>
-                <img src="https://beakerhealth.com/images/about/our-vision/list-item-icon.svg" />
-                A verified YouTube for healthcare professionals.
-              </li>
-              <li>
-                <img src="https://beakerhealth.com/images/about/our-vision/list-item-icon.svg" />
-                The space where you can learn from the innovators and
-                experimenters while finding approved content from
-                well-credentialed healthcare professionals.
-              </li>
-              <li>
-                <img src="https://beakerhealth.com/images/about/our-vision/list-item-icon.svg" />
-                A place where you can be celebrated and receive the credit you
-                deserve.
+                <img src={listSvg} />
+                We provide our clients with the latest tools they need to manage
+                stress and anxiety more effectively in order to bring out their
+                full potential in life.
               </li>
             </p>
           </div>
@@ -118,41 +147,27 @@ export default function About() {
       </ContentSection>
 
       <ContentSection gray={true}>
-        <h1>Why Choose Us</h1>
+        <h1>Our Team</h1>
         <p>
-          We follow the values our mothers instilled in us. We know time is
-          precious and should not be wasted. For all healthcare professionals,
-          time is your most valuable asset, and we want to help make sure you
-          are spending it where you are making the most impact. Get your time
-          back with Beaker Health.
+          At Magic Health we have assembled an experienced team of professionals
+          that have taken years of learning and education in various fields of
+          healthcare. From dietitians to mind body specialists, our team is
+          dedicated to supporting each individual client towards achieving
+          brilliant health outcomes through prevention and self-empowerment
+          techniques.
         </p>
 
-        <div className="section__img-row">
-          <div>
-            <img src="https://beakerhealth.com/images/about/our-metrics/support-highlight.svg" />
-            <h2>All Star Support</h2>
-            <p>
-              We help disseminate knowledge easier and quicker. If you have
-              other needs, reach out.
-            </p>
-          </div>
-
-          <div>
-            <img src="https://beakerhealth.com/images/about/our-metrics/team-highlight.svg" />
-            <h2>Strong Teams</h2>
-            <p>
-              Our technical team is nothing shy of magic. You need custom
-              solutions, let's chat.
-            </p>
-          </div>
-
-          <div>
-            <img src="https://beakerhealth.com/images/about/our-metrics/customer-satisfaction-highlight.svg" />
-            <h2 className="about__center-header">Customer Satisfaction</h2>
-            <p>
-              Users love us because of our simplicity, content, and support.
-              Let's achieve more.
-            </p>
+        <div className="section__img-text-row">
+          <div className="large">
+            <Player
+              src="https://assets3.lottiefiles.com/packages/lf20_wdXBRc.json"
+              className="player"
+              loop
+              autoplay
+              style={{
+                width: window.screen.width <= 650 ? "350px" : "450px",
+              }}
+            />
           </div>
         </div>
       </ContentSection>
