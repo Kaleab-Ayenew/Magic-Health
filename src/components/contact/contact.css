@@ -20,6 +20,29 @@
   transform-origin: center center;
 }
 
+.content-section.contact-section .contact__form-container > div {
+  margin: 10px 0;
+}
+.content-section.contact-section .contact__form-container textarea {
+  min-height: 250px;
+}
+
+.content-section.contact-section .section__img-text-row {
+  flex-direction: column-reverse;
+  align-self: center;
+}
+
+.content-section.contact-section .contact__form-container {
+  width: 100%;
+  margin-top: 50px;
+}
+.content-section.contact-section .contact__form-container > div {
+  margin: 10px 0;
+}
+.content-section.contact-section .contact__form-container textarea {
+  min-height: 250px;
+}
+
 @media screen and (max-width: 950px) {
   .content-section.contact-section > div > h1 {
     text-align: center;
